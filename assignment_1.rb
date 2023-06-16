@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def fibs(n, result = [])
   first = 0
   second = 1
@@ -12,7 +14,7 @@ def fibs(n, result = [])
 end
 
 def fibs_rec(n, a = 0, b = 1, result = [])
-  if n > 0
+  if n.positive?
     result << a
     fib = a + b
     a = b
