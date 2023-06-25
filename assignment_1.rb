@@ -12,7 +12,7 @@ def fibs(n, result = [])
   end
   result
 end
-
+# 
 def fibs_rec(n, a = 0, b = 1, result = [])
   if n.positive?
     result << a
